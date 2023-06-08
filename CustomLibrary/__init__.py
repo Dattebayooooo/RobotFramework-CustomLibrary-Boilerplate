@@ -17,13 +17,12 @@ class CustomLibrary:
     
     def test_keyword(self, argument=None):
         """Test Keyword Accepting optional arguments"""
-        logger.info("Runing Keyword")
-        logger.info("argument: {}".format(argument))
+        logger.info(f"Received Arguments: {argument}")
     
     def test_keyword2(self):
-        """Dummy keyword with no arguments"""
+        """Dummy keyword with no arguments with return"""
         ## Add your code logic here
-        pass
+        return 'Hello'
     
     def _private_keyword(self):
         """Private method which will not be displayed/Called in IDE"""
